@@ -1,0 +1,237 @@
+:root {
+  font-size: 100%;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* START HEADER */
+header {
+  background-image: url(../images/bg-header-mobile.png);
+  background-size: cover;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+.logo,
+header h2,
+header p {
+  margin: 3rem 0;
+}
+header > div,
+.blok1,
+.blok3,
+.blok4,
+.blok5,
+.blok6 {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+header h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: rgb(77, 86, 91);
+  line-height: 3rem;
+}
+header p {
+  opacity: 40%;
+  font-size: 1.42rem;
+  margin-top: 0;
+  line-height: 2rem;
+}
+header button,
+main button {
+  width: 100%;
+  padding: 1rem 0rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #26bba5;
+  color: white;
+  box-shadow: 0 10px 15px rgb(38 187 165 / 50%);
+}
+header button:hover,
+main button:hover {
+  background-color: #60cbbb;
+  cursor: pointer;
+}
+header button + button,
+main button + button {
+  background-color: rgb(97, 116, 255);
+  box-shadow: 0 10px 15px rgb(97 116 255 / 50%);
+}
+header button + button:hover,
+main button + button:hover {
+  background-color: #8896ff;
+}
+/* START MAIN */
+main {
+  padding: 2rem;
+  text-align: center;
+}
+main h2 {
+  font-size: 2.13rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+main h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+main p {
+  font-size: 20px;
+  margin: 1.5rem 18px;
+  opacity: 40%;
+  line-height: 1.7rem;
+}
+main img {
+  width: 10%;
+  margin: 3rem 0;
+}
+main .blok2 img,
+main .blok3 img {
+  width: 100%;
+}
+.blok4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem auto;
+}
+.blok4 img {
+  margin: 1rem 0px;
+}
+.blok5 img {
+  width: 35%;
+}
+.blok5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10rem auto;
+}
+.blok2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+.blok6 div {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+/* START FOOTER */
+footer {
+  background-color: #f5f6f8;
+  text-align: center;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer > img {
+  width: 10%;
+}
+footer ul {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: space-between;
+}
+footer ul li:hover {
+  color: #26bba4;
+  cursor: pointer;
+}
+footer .icons {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .icons img:hover {
+  filter: invert(88%) sepia(21%) saturate(935%) hue-rotate(123deg)
+    brightness(85%) contrast(97%);
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  header {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+
+  .blok2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  main .blok2 img {
+    width: 50%;
+    position: relative;
+    left: -4rem;
+  }
+  .blok2 > div {
+    width: 48%;
+    padding-right: 13rem;
+  }
+  .blok2 > div p {
+    margin: 1.5rem 0;
+  }
+  .blok5 {
+    justify-content: space-around;
+  }
+  .blok5 img {
+    width: 15%;
+  }
+  .blok4,
+  .blok5 {
+    column-gap: 5rem;
+    max-width: 85rem;
+  }
+  .blok6 {
+    margin: 6rem auto;
+  }
+  .blok4,
+  .blok5,
+  .blok6 div,
+  footer {
+    flex-direction: row;
+    margin: auto;
+  }
+  header button,
+  main button {
+    width: 30%;
+  }
+  .blok6 div,
+  .knop {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-top: 3rem;
+  }
+  footer ul {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer {
+    justify-content: space-around;
+    text-align: left;
+  }
+  footer .icons {
+    width: 15%;
+  }
+}
